@@ -1,3 +1,5 @@
+[![License](https://img.shields.io/badge/License-GPL-orange)](https://github.com/Alpher-Dark/BotBot/blob/main/LICENSE)
+
 # BotBot
 A talking partner made to not get you bored
 
