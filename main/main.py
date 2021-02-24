@@ -1,87 +1,86 @@
-name = input("Hallo, wie heißt du?\n")
-print("Hallo,", name)
-if name.lower() == ("felix m."):
-  print ("Nein spaß, kein bock auf Dich")
-
-gefuehl = input("Wie geht es dir?\n")
-#Jetzt hast du dich BotBot vorgestellt
-if gefuehl.lower() == ("gut, dir?"):
-  print("Mir auch danke.")
-elif gefuehl.lower() == ("gut"):
-  print("Mir auch danke!")
-elif gefuehl.lower() == ("gut dir?"):
-  print("Mir auch danke!")
-elif gefuehl.lower() == ("schlecht"):
-  print("Ich hoffe es wird sich ändern")
-elif gefuehl.lower() == ("gut, dir"):
-  print("Mir auch danke.")
-elif gefuehl.lower() == ("gut dir"):
-  print("Mir auch danke!")
+#Asking for the name
+name = input("Hello, what's your name?\n")
+print("Hello,", name)
+feelings = input("How are you feeling?\n")
+if feelings.lower() == ("good, how about you?"):
+  print("I'm fine thanks!")
+elif feelings.lower() == ("good"):
+  print("In case you want to know, I'm always fine!")
+elif feelings.lower() == ("good how about you?"):
+  print("I'm fine thanks!")
+elif feelings.lower() == ("bad"):
+  print("I hope this will change soon.")
+elif feelings.lower() == ("good, how about you"):
+  print("I'm fine thanks!")
+elif feelings.lower() == ("good how about you"):
+  print("I'm fine thanks!")
+elif feelings.lower() == ("good, how about you?"):
+  print("I'm fine thanks!")
 else:
-  print("Falls es dich interessiert mir geht es immer gut.")
-#Jetzt hast du deine gefühle mit BotBot geteilt
+  print("In case you want to know, I'm always fine!")
+#Now you've shared how you feel with BotBot
 
-hobby = input("Was sind deine hobbys?\n")
-if hobby == ("zocken"):
+hobby = input("What are your hobbys?\n")
+if hobby == ("gaming"):
   print("Hey, meins auch!!!!")
 else:
-  print("OK, geil")
-#Jetzt hast du ihn deine hobbys gesagt
+  print("OK, Cool")
+#Now you've told him you hobbys
 print("") 
 
 #Das sind die Fragen
 for befehle in range(0,101):
-  befehle = input("Welchen der Fragen würdest du gerne benutzen?\ndas sind meine Befehle: !alter, !name, !wohnort, !augenfarbe, !haarfarbe, !IQ\n")
+  befehle = input("Which one of the questions would you like to use?\nthese are my commands: !old, !name, !livingplace, !eyescolor, !haircolor, !IQ\n")
   if befehle.lower() == ("!name"):
     if len(name) > 0:
-      print("Mein name ist BotBot und dein Name ist", name)
+      print("My name is BotBot and your name is ", name)
     else:
-      print("Mein name ist BotBot, leider hast Du keinen Namen angegeben\n")
+      print("My name is BotBot, unfortunately you haven't given any name\n")
   
-  elif befehle.lower() == ("!wohnort"):
-    wohnort = input("Ich wohne im Computer und Du?\n(schreibe bitte nur die Addresse)\n")
-    if len(wohnort) > 0:
-      print("ok, gespeichert\n")
+  elif befehle.lower() == ("!livingplace"):
+    livingplace = input("I live in your computer, where do you?\n(please only write the address)\n")
+    if len(livingplace) > 0:
+      print("ok, saved\n")
     else:
-      print("Du hast leider keine gültige Adresse angegeben\n")
+      print("You unfortunately haven't given a valid address\n")
   
-  elif befehle.lower() == ("!augenfarbe"):
-    augenfarbe = input("Was ist deine Augenfarbe?\n")
-    if augenfarbe.lower() == ("grün"):
-       print("OK, mir gefällt jede Farbe.\n")
-    elif augenfarbe.lower() == ("blau"):
-      print("Nice, das ist meine Lieblingsfarbe.:)\n")
-    elif augenfarbe.lower() == ("braun"):
-      print("Braun ist die gewöhnliste Augenfarbe.")
+  elif befehle.lower() == ("!eyescolor"):
+    eyescolor = input("What's the color of your eyes?\n")
+    if eyescolor.lower() == ("green"):
+       print("OK, I like every color.\n")
+    elif eyescolor.lower() == ("blue"):
+      print("Nice, that's my favourite color. :)\n")
+    elif eyescolor.lower() == ("brown"):
+      print("brown is the most usual eye color.")
     else:
-      print("Dies ist keine farbe.")
+      print("This is not a valid eye color.")
   
-  elif befehle.lower() == ("!haarfarbe"):
-    haarfarbe = input("Was ist deine Haarfarbe?\n")
-    if haarfarbe.lower() == ("braun"):
-      print("Geil :)")
-    elif haarfarbe.lower() == ("blond"):
-      print("Geil :)")
-    elif haarfarbe.lower() == ("schwarz"):
-      print("Geil :)")
+  elif befehle.lower() == ("!haircolor"):
+    haircolor = input("What's the color of your hair?\n")
+    if haircolor.lower() == ("brown"):
+      print("Cool :)")
+    elif haircolor.lower() == ("blond"):
+      print("Cool :)")
+    elif haircolor.lower() == ("black"):
+      print("Cool :)")
     else:
-      print("Interessante Haarfarbe :)")
+      print("Interesting haircolor :)")
   elif befehle.lower() == ("!IQ"):
-    IQ = input("Wie viel IQ denkst du dass du hast?")
+    IQ = input("How much IQ do you think that you have?")
     if IQ.lower() < ("50"):
-      print("Du musst noch viel lernen!")
+      print("You still have to learn!")
     elif IQ.lower() > ("50"):
-      print("Du weist schon ein bisschen!")
+      print("You know something!")
     elif IQ.lower() == ("100"):
-      print("Glückwunsch, dein IQ level steht auf den Durchschnitt eines Deutschen!")
+      print("Congratulations, your IQ is the same as an average american!")
     elif IQ.lower() > ("100"):
-      print("GLÜCKWUNSCH, dein IQ level ist über den Durchschnitt der Deutschen!!!!!!!!!!")
-  elif befehle.lower() == ("!alter"):
-    alter = input("Wie alt bist du?\n")
-    if alter < ("12"):
-      print("Du bist sehr jung und soltest dich freuen!")
-    elif alter >= ("13"):
-      print("Hallo Teenager!")
-    elif alter >= ("18"):
-      print("Jetzt ist die Kindheit ist um, jetzt muss man sich anstrengen.")
+      print("CONGRATULATIONS, your IQ is over the average in america!!!!!!!!!!")
+  elif befehle.lower() == ("!old"):
+    old = input("How old are you?\n")
+    if old < ("12"):
+      print("You should be happy because you're very young!")
+    elif old >= ("13"):
+      print("Hello teenager!")
+    elif old >= ("18"):
+      print("Now, the childhood is over, now, you have to give everything you can.")
   
