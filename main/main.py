@@ -22,7 +22,7 @@ else:
 
 hobby = input("What are your hobbys?\n")
 if hobby == ("gaming"):
-  print("Hey, meins auch!!!!")
+  print("Hey, mine too!!!!")
 else:
   print("OK, Cool")
 #Now you've told him you hobbys
