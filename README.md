@@ -7,4 +7,4 @@ until I find out how to make it a .exe file you're going to need to download (if
 
 You can suggest your commands if you want :smiley:
 
-Discord Server: https://discord.gg/mr4kW3ptFw
+Discord Server: http://evolterr.com/8TSv
