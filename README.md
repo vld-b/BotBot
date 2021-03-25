@@ -1,4 +1,4 @@
-[![License](https://img.shields.io/badge/License-GPL-blue)](https://github.com/Alpher-Dark/BotBot/blob/main/LICENSE) [![Discord](https://img.shields.io/badge/Chat-Discord-blue)](https://discord.gg/4qWMGUvaWG)
+[![License](https://img.shields.io/badge/License-GPL-blue)](https://github.com/Alpher-Dark/BotBot/blob/main/LICENSE) [![Discord](https://img.shields.io/badge/Chat-Discord-blue)](http://evolterr.com/8TSv)
 
 # BotBot
 A talking partner made to not get you bored
