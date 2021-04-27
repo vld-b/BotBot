@@ -1,27 +1,18 @@
 import webbrowser
 import random
 import time
+import os
 
 #Asking for the name
 name = input("Hello, what's your name?\n")
 print("Hello,", name)
 feelings = input("How are you feeling?\n")
-if feelings.lower() == ("good, how about you?"):
-  print("I'm fine thanks!")
+if "good" in feelings and "you" in feelings:
+  print("I'm fine thanks")
 elif feelings.lower() == ("good"):
   print("In case you want to know, I'm always fine!")
-elif feelings.lower() == ("good how about you?"):
-  print("I'm fine thanks!")
 elif feelings.lower() == ("bad"):
   print("I hope this will change soon.")
-elif feelings.lower() == ("good, how about you"):
-  print("I'm fine thanks!")
-elif feelings.lower() == ("good how about you"):
-  print("I'm fine thanks!")
-elif feelings.lower() == ("good, how about you?"):
-  print("I'm fine thanks!")
-elif feelings.lower() == ("good, you") or ("good you"):
-  print("I'm fine thanks!")
 else:
   print("In case you want to know, I'm always fine!")
 #Now you've shared how you feel with BotBot
@@ -86,32 +77,36 @@ while(True):
     elif randomMeme == 23:
       webbrowser.open("what_normal_market_offers_vs_black_market.png")
     elif randomMeme == 24:
-      webbrowser.open("whyyyyyyyyyyyyyy.png")
-    elif randomMeme == 25:
+      webbrowser.open("C:/Users/vladb/Dropbox/My PC (DESKTOP-Vlad)/Documents/memes/whyyyyyyyyyyyyyy.png")
+    else:
       webbrowser.open("Shrek.txt")
-  if befehle.lower() == ("!name"):
+    time.sleep(2)
+
+  elif befehle.lower() == ("!name"):
     if len(name) > 0:
       print("My name is BotBot and your name is ", name)
     else:
       print("My name is BotBot, unfortunately you haven't given any name\n")
+    time.sleep(2)
   
   elif befehle.lower() == ("!livingplace"):
     livingplace = input("I live in your computer, where do you?\n(please only write the address)\n")
     if len(livingplace) > 0:
-      print("ok, saved\n")
+      print("ok, saved!\n")
     else:
       print("You unfortunately haven't given a valid address\n")
   
   elif befehle.lower() == ("!eyescolor"):
     eyescolor = input("What's the color of your eyes?\n")
     if eyescolor.lower() == ("green"):
-       print("OK, I like every color.\n")
+      print("OK, I like every color.\n")
     elif eyescolor.lower() == ("blue"):
       print("Nice, that's my favourite color. :)\n")
     elif eyescolor.lower() == ("brown"):
       print("brown is the most usual eye color.")
     else:
       print("This is not a valid eye color.")
+    time.sleep(2)
   
   elif befehle.lower() == ("!haircolor"):
     haircolor = input("What's the color of your hair?\n")
@@ -123,6 +118,8 @@ while(True):
       print("Cool :)")
     else:
       print("Interesting haircolor :)")
+    time.sleep(2)
+
   elif befehle.lower() == ("!IQ"):
     IQ = input("How much IQ do you think that you have?")
     if IQ.lower() < ("50"):
@@ -133,6 +130,8 @@ while(True):
       print("Congratulations, your IQ is the same as an average american!")
     elif IQ.lower() > ("100"):
       print("CONGRATULATIONS, your IQ is over the average in america!!!!!!!!!!")
+    time.sleep(2)
+
   elif befehle.lower() == ("!old"):
     old = input("How old are you?\n")
     if old < ("12"):
@@ -141,4 +140,5 @@ while(True):
       print("Hello teenager!")
     elif old >= ("18"):
       print("Now, the childhood is over, now, you have to give everything you can.")
+    time.sleep(2)
   
